@@ -4,7 +4,7 @@
 #  - E-Mail: Me@NiklausNewport.Dev (Business or Programming Related Inquiries Only)
 #
 # Program Info:
-#  - Program Name: Converter
+#  - Program Name: Measurement Converter
 #  - Programming Language: Python
 #  - Development Date Range: 30 June 2020 (One Day)
 #  - Function of Program:
