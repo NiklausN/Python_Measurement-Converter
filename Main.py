@@ -12,7 +12,7 @@
 #       Temperature, and other measurements to and from various measurement systems.
 
 # Provide a Menu
-print("Enter a Number from the selection below.")
+print("Type a Number From The Selection Below Then Click Enter.")
 print("┌──────────────────────────────┐")
 print("│        1 = Temperature       │")
 print("│        2 = Mass              │")
@@ -22,10 +22,10 @@ print("│        0 = Exit Program      │")
 print("└──────────────────────────────┘")
 
 # Retrieve Input from the User
-inp1 = int(input("User: "))
+inp1 = str(input("User: "))
 
 # Execute the Users Selection
-if inp1 == 1:  # Temperature
+if inp1 == '1':  # Temperature
 
     # Import Temperature.py
     from Measurements import Temperature
@@ -33,7 +33,7 @@ if inp1 == 1:  # Temperature
     # Execute Temperature.py
     callable(Temperature)
 
-elif inp1 == 2:  # Mass
+elif inp1 == '2':  # Mass
 
     # Import Mass.py
     from Measurements import Mass
@@ -41,7 +41,7 @@ elif inp1 == 2:  # Mass
     # Execute Mass.py
     callable(Mass)
 
-elif inp1 == 3:  # Distance
+elif inp1 == '3':  # Distance
 
     # Import Distance.py
     from Measurements import Distance
@@ -49,7 +49,7 @@ elif inp1 == 3:  # Distance
     # Execute Distance.py
     callable(Distance)
 
-elif inp1 == 4:  # Weight
+elif inp1 == '4':  # Weight
 
     # Import Weight.py
     from Measurements import Weight
@@ -57,7 +57,7 @@ elif inp1 == 4:  # Weight
     # Execute Weight.py
     callable(Weight)
 
-elif inp1 == 0:  # Exit Program
+elif inp1 == '0':  # Exit Program
 
     # Say a Farewell
     print("Goodbye! Please come back again...")
