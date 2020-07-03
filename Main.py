@@ -16,8 +16,17 @@ print("Type a Number From The Selection Below Then Click Enter.")
 print("┌──────────────────────────────┐")
 print("│        1 = Temperature       │")
 print("│        2 = Mass              │")
-print("│        3 = Distance          │")
+print("│        3 = Length            │")
 print("│        4 = Weight            │")
+print("│        5 = Digital Storage   │")
+print("│        6 = Fuel Economy      │")
+print("│        7 = Pressure          │")
+print("│        8 = Energy            │")
+print("│        9 = Time              │")
+print("│        10 = Volume           │")
+print("│        11 = Area             │")
+print("│        12 = Speed            │")
+print("│        13 = Frequency        │")
 print("│        0 = Exit Program      │")
 print("└──────────────────────────────┘")
 
@@ -41,13 +50,13 @@ elif inp1 == '2':  # Mass
     # Execute Mass.py
     callable(Mass)
 
-elif inp1 == '3':  # Distance
+elif inp1 == '3':  # Length
 
-    # Import Distance.py
-    from Measurements import Distance
+    # Import Length.py
+    from Measurements import Length
 
-    # Execute Distance.py
-    callable(Distance)
+    # Execute Length.py
+    callable(Length)
 
 elif inp1 == '4':  # Weight
 
@@ -69,3 +78,6 @@ else:
 
     # Provide an Error Message
     print("Error: An invalid selection has been made! Please rerun the program and try again.")
+
+    # Terminate the Program
+    exit(0)
