@@ -32,7 +32,7 @@ if inp1 == '1':  # From Celsius
         inp3 = float(input("User: "))
 
         # Convert the Temperature
-        temp = ((inp3 * (9.00/5.00)) + 32.00)
+        temp = ((inp3 * 1.8) + 32.00)
 
         # Display the Results
         print(f'{inp3}° Celsius will convert to {temp}° Fahrenheit.')
@@ -79,6 +79,45 @@ elif inp1 == '2':  # From Fahrenheit
     inp2 = str(input("User: "))
 
     # Execute Users Selection
+    if inp2 == '1':  # To Celsius
+
+        # Retrieve the Temperature from the User
+        print("What is the temperature in Fahrenheit?")
+        inp3 = float(input("User: "))
+
+        # Compute the Converted Temperature
+        temp = ((inp3 - 32) * 1.8)
+
+        # Display the Results
+        print(f'{inp3}° Fahrenheit will convert to {temp}° Celsius.')
+
+    elif inp2 == '2':  # To Kelvin
+
+        # Retrieve the Temperature from the User
+        print("What is the temperature in Fahrenheit?")
+        inp3 = float(input("User: "))
+
+        # Compute the Converted Temperature
+        temp = (((inp3 - 32) * 1.8) + 273.15)
+
+        # Display the Results
+        print(f'{inp3}° Fahrenheit will convert to {temp}° Kelvin.')
+
+    elif inp2 == '0':  # Exit Program
+
+        # Say a Farewell
+        print("Goodbye! Please come back again.")
+
+        # Terminate the Program
+        exit(0)
+
+    else:
+
+        # Provide an Error Message
+        print("Error: An invalid selection has been made! Please rerun the program and try again...")
+
+        # Terminate the Program
+        exit(0)
 
 elif inp1 == '3':  # From Kelvin
 
@@ -94,6 +133,45 @@ elif inp1 == '3':  # From Kelvin
     inp2 = str(input("User: "))
 
     # Execute Users Selection
+    if inp2 == '1':  # To Fahrenheit
+
+        # Retrieve the Temperature from the User
+        print("What is the temperature in Kelvin?")
+        inp3 = float(input("User: "))
+
+        # Compute the Converted Temperature
+        temp = (((inp3 - 273.15) * 1.8) + 32)
+
+        # Display the Results
+        print(f'{inp3}° Kelvin will convert to {temp}° Fahrenheit.')
+
+    elif inp2 == '2':  # To Celsius
+
+        # Retrieve the Temperature from the User
+        print("What is the temperature in Kelvin?")
+        inp3 = float(input("User: "))
+
+        # Compute the Converted Temperature
+        temp = (inp3 - 273.15)
+
+        # Display the Results
+        print(f'{inp3}° Kelvin will convert to {temp}° Celsius')
+
+    elif inp2 == '0':  # Exit Program
+
+        # Say a Farewell
+        print("Goodbye! Please come again...")
+
+        # Terminate the Program
+        exit(0)
+
+    else:
+
+        # Provide an Error Message
+        print("Error: An invalid selection has been made! Please rerun the program and try again...")
+
+        # Terminate the Program
+        exit(0)
 
 elif inp1 == 0:  # Exit Program
 
